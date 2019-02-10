@@ -1,0 +1,114 @@
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+a,a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.max-width-75 {
+    max-width: 75rem;
+}
+
+.footer-icon {
+    width: 150px;
+    height: 50px;
+}
+
+.fs-08 {
+    font-size: 0.8rem;
+}
+
+.fs-15 {
+    font-size: 1.5rem;
+}
+
+.fs-20 {
+    font-size: 2rem;
+}
+
+.right {
+    right: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.w-fit-content {
+    width: fit-content;
+}
+
+.h-fit-content {
+    height: fit-content;
+}
+
+.w-fc {
+    width: fit-content;
+}
+
+input[type="radio"]{
+    display: none!important;
+}
+
+input:checked[type="radio"] + label{
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.menu-button{
+    width: 150px;
+    text-transform: uppercase;
+}
+
+.menu1:checked ~ .menu1 {
+    display: block!important;
+}
+
+.menu1-1:checked ~ div > .menu1-1 {
+    display: block!important;
+}
+
+.menu1-2:checked ~ div > .menu1-2 {
+    display: block!important;
+}
+.menu2:checked ~ .menu2 {
+    display: block!important;
+}
+
+.menu3:checked ~ .menu3 {
+    display: block!important;
+}
+
+.menu4:checked ~ .menu4 {
+    display: block!important;
+}
+
+.menu2-1:checked ~ div > .menu2-1 {
+    display: block!important;
+}
+
+.menu2-2:checked ~ div > .menu2-2 {
+    display: block!important;
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    body {
+        padding-top:0;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
