@@ -1,0 +1,32 @@
+{
+    "board": [
+        {
+            "name": "Matthieu ALLEZ",
+            "poste": "President"
+        },
+        {
+            "name": "Philippe SEKSIK",
+            "poste": "Secretary"
+        },
+        {
+            "name": "Xavier TRETON",
+            "poste": "Treasurer"
+        }
+    ],
+    "projectManager": ["Madeleine BEZAULT"],
+    "scientificCommitee": [
+        "Matthieu ALLEZ",
+        "Philippe SEKSIK",
+        "Xavier TRETON",
+        "Nicolas BARNICH",
+        "Stéphane NANCEY",
+        "Benjamin PARIENTE",
+        "Jean-Marie REIMUND",
+        "Franck RUEMMELE",
+        "Harry SOKOL",
+        "Carmen STEFANESCU",
+        "Lionel LE BOURHIS",
+        "Dominique CAZALS",
+        "Claire AUZOLLE"
+    ]
+}
