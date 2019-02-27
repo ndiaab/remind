@@ -1,5 +1,5 @@
 (() => {
-    const HREF = window.location.origin;
+    const HREF = window.location.href;
     let navBarItems, menuItemsTab;
     let form;
     const validEmail = (email) => {
