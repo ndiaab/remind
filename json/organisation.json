@@ -11,9 +11,12 @@
         {
             "name": "Xavier TRETON",
             "poste": "Treasurer"
+        },
+        {
+            "name": "Madeleine BEZAULT",
+            "poste": "Project Manager"
         }
     ],
-    "projectManager": ["Madeleine BEZAULT"],
     "scientificCommitee": [
         "Matthieu ALLEZ",
         "Philippe SEKSIK",

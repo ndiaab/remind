@@ -28,15 +28,5 @@
         "title": "Histological Analysis (2/2)",
         "image": "assessment-6.png",
         "subtitle": "CD Ileum section"
-    },
-    {
-        "title": "Endoscopic recurrence depending on histologic score at proximal margin",
-        "image": "assessment-7.png",
-        "subtitle": "Histological score at proximal margin: no lesion (0/3),Erosion/Ulceration (1/3), Submucosa Fibrosis (2/3), Subserosa Infiltration (3/3)"
-    },
-    {
-        "title": "Correlation between transcriptomic signatures and erosion, ulceration or cryptitis at proximal margin",
-        "image": "assessment-8.png",
-        "subtitle": "M.Ngollo: Integrating data to understand better the pathophysiology / to find the best biomarkers"
     }
 ]

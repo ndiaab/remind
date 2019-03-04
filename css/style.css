@@ -11,7 +11,7 @@ a,a:hover {
     text-decoration: none;
 }
 
-.navbar-nav {
+.navbar-nav{
     cursor:pointer;
 }
 
@@ -122,9 +122,17 @@ input:checked[type="radio"] + label{
     bottom:0;
 }
 
-.footer-icon {
+.partner-icon {
     width: 7rem;
     height: auto;
+}
+
+.legal-notice {
+    cursor: pointer;
+}
+
+.legal-notice:hover {
+    text-decoration: underline !important;
 }
 
 /* Small devices (landscape phones, 576px and up)*/

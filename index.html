@@ -47,7 +47,7 @@
             Groupe de <u><b>Re</b></u>cherche sur les <u><b>M</b></u>aladies <u><b>in</b></u>flammatoires
             <u><b>d</b></u>igestives
         </div>
-        <input type="radio" class="menu menu1" id="menu1" name="menu" checked/>
+        <input type="radio" class="menu menu1" id="menu1" name="menu" checked />
         <label for="menu1" class="menu-button btn btn-light rounded-1 d-none">HOME</label>
 
         <input type="radio" class="menu menu2" id="menu2" name="menu" />
@@ -76,7 +76,11 @@
                     such resource. We now have acquired in our group statistical and bioinformatics knowledge and
                     know-how to integrate large set of data.
                 </div>
-                <div class="card organisation p-2">
+                <div class="card board d-xs-inline-block d-md-none p-2">
+                </div>
+                <div class="card scientific p-2">
+                </div>
+                <div class="card board d-none d-md-inline-block p-2">
                 </div>
                 <div class="card p-2">
                     <div class="card-body">
@@ -86,31 +90,26 @@
                 </div>
                 <div class="card p-2">
                     <div class="card-body">
-                        <img class="card-img-top" src="./images/home-2.png" alt="Card image cap">
-                    </div>
-                </div>
-                <div class="card p-2">
-                    <div class="card-body">
                         <h4 class=" text-center">Partnership</h4>
                     </div>
                     <div class="card-body">
                         <a class="p-2" href="https://www.afa.asso.fr/" target="_blank">
-                            <img class="footer-icon" src="./images/partner/partner-afa.png" alt>
+                            <img class="partner-icon" src="./images/partner/partner-afa.png" alt>
                         </a>
                         <a class="p-2" href="https://www.ferring.com" target="_blank">
-                            <img class="footer-icon" src="./images/partner/partner-ferring.png" alt>
+                            <img class="partner-icon" src="./images/partner/partner-ferring.png" alt>
                         </a>
                         <a class="p-2" href="https://www.getaid.org" target="_blank">
-                            <img class="footer-icon" src="./images/partner/partner-getaid.png" alt>
+                            <img class="partner-icon" src="./images/partner/partner-getaid.png" alt>
                         </a>
                         <a class="p-2" href="https://www.janssen.com/fr" target="_blank">
-                            <img class="footer-icon" src="./images/partner/partner-janssen.png" alt>
+                            <img class="partner-icon" src="./images/partner/partner-janssen.png" alt>
                         </a>
                         <a class="p-2" href="http://www.msd-france.com/" target="_blank">
-                            <img class="footer-icon" src="./images/partner/partner-msd.png" alt>
+                            <img class="partner-icon" src="./images/partner/partner-msd.png" alt>
                         </a>
                         <a class="p-2" href="http://www.roche.fr" target="_blank">
-                            <img class="footer-icon" src="./images/partner/partner-roche.png" alt>
+                            <img class="partner-icon" src="./images/partner/partner-roche.png" alt>
                         </a>
                     </div>
                 </div>
@@ -150,12 +149,12 @@
                     <div class="card">
                         <div class="card-body text-justify">
                             <h4 class=" text-center">Study specific documents</h4>
-                            <a href="./pdf/male-gender.pdf" target="_blank">
+                            <a href="./pdf/REMIND-POP_Protocole_v11_20181001_MBT.pdf" target="_blank">
                                 &bull;Protocol
                                 <img class="icon" src="./images/pdf.svg" alt="">
                             </a>
                             <br>
-                            <a href="./pdf/male-gender.pdf" target="_blank">
+                            <a href="./pdf/REMIND-POP_NIFC_v6_20180704_MBT.pdf" target="_blank">
                                 &bull;Patient Notice and Inform Consent
                                 <img class="icon" src="./images/pdf.svg" alt="">
                             </a>
@@ -194,8 +193,10 @@
                     </div>
                 </div>
                 <div class="col-md-6 p-3">
-                        <h4 class="mb-3">Contact us :</h4>
-                    <form method="POST" action="https://script.google.com/a/listortable.com/macros/s/AKfycbyCy1Jx8Q9-yiQLkcRul6SGJYpPUsQDc_okraoF/exec" class="gform">
+                    <h4 class="mb-3">Contact us :</h4>
+                    <form method="POST"
+                        action="https://script.google.com/a/listortable.com/macros/s/AKfycbyCy1Jx8Q9-yiQLkcRul6SGJYpPUsQDc_okraoF/exec"
+                        class="gform">
                         <input class="d-none" id="honeypot" type="text" name="honeypot" value="" />
                         <div class="form-group">
                             <input class="form-control" id="name" name="name" placeholder="Name *" required
@@ -227,15 +228,13 @@
         </div>
     </div>
     <!-- MENU4 END -->
-    </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="legalNotice" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Mentions légales</h5>
+                    <h5 class="modal-title">Legal Notice</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -246,15 +245,24 @@
                         Hôpital Saint-Louis<br>
                         1, avenue Claude-Vellefaux<br>
                         75475 Paris Cedex 10<br>
-                    </p>
-                    <p>
-                        <a href="./pdf/REMIND_Statut-asso_v1.pdf" target="_blank"><u>status associaton loi
+                        Email: contact@associaton-remind.<br>
+                        Status: <a href="./pdf/REMIND_Statut-asso_v1.pdf" target="_blank"><u>associaton loi
                                 1901</u></a><br>
                     </p>
+                    <p>
+                        Designed and published by <a href="https://www.linkedin.com/in/ndiaye-iv"
+                            target="_blank"><u>Abdoulaye N'DIAYE</u></a>
+                    </p>
 
-                    Designed by Abdoulaye N'DIAYE : <a href="https://www.linkedin.com/in/ndiaye-iv"
-                        target="_blank"><u>linkedin.com</u></a><br>
-                    Fond vecteur créé parstarline : <a href="https://fr.freepik.com/photos-vecteurs-libre/fond"
+
+                    <p>
+                        Hosted by Wevox<br>
+                        3 rue de Franche Comté<br>
+                        CS 50311<br>
+                        50103 Cherbourg<br>
+                        Phone: 08 99 49 23 50<br>
+                    </p>
+                    Vector background created by parstarline : <a href="https://fr.freepik.com/photos-vecteurs-libre/fond"
                         target="_blank"><u>fr.freepik.com</u></a>
                 </div>
             </div>
@@ -264,7 +272,7 @@
     <!-- FOOTER ELEMENT -->
     <footer class="footer">
         <div class="ml-auto mr-auto w-fc p-1">
-            <a data-toggle="modal" data-target="#exampleModalCenter">REMIND - Legal Notice</a>
+            <a class="legal-notice" data-toggle="modal" data-target="#legalNotice">REMIND - legal notice</a>
         </div>
     </footer>
     <!-- FOOTER END -->
