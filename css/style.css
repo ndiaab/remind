@@ -32,6 +32,18 @@ a,a:hover {
     font-size: 1rem;
 }
 
+.map path {
+    fill:#415F77;
+    stroke:#769cb5;
+    stroke-width:1px;
+    transition:fill .3s
+}
+
+.antenna path:hover {
+    cursor: pointer;
+    fill:#FC5050
+}
+
 .logo {
     width: fit-content;
     margin-left: auto;
