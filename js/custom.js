@@ -175,7 +175,7 @@
         publications.reverse();
         publications.forEach(publication => {
             publicationsHTML += '<p><b>' + publication.title + ': </b>' +
-                '<br/><a href="' + HREF + 'pdf/' + publication.pdf + '" target="_blank">' + publication.description + '<img class="icon" src="./images/pdf.svg" alt></a></p>'
+                '<br/><a href="' + HREF + 'pdf/' + publication.pdf + '" target="_blank">' + publication.description + '&nbsp;<img class="icon" src="./images/pdf.svg" alt></a></p>'
         });
         document.querySelector('div.publication').innerHTML = publicationsHTML;
     }

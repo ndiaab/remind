@@ -33,15 +33,18 @@ a,a:hover {
 }
 
 .map path {
-    fill:#415F77;
-    stroke:#769cb5;
-    stroke-width:1px;
-    transition:fill .3s
+    fill: lightgray;
+    stroke: white;
+    stroke-width: 1px;
 }
 
-.antenna path:hover {
+path.antenna {
     cursor: pointer;
-    fill:#FC5050
+    fill:lightsteelblue;
+}
+
+path.antenna:hover {
+    fill:cornflowerblue;
 }
 
 .logo {
