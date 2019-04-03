@@ -327,7 +327,7 @@
             <input type="radio" class="menu2-1" id="menu2-1" name="menu2" checked />
             <label for="menu2-1" class="menu-button btn btn-light rounded-1">design</label>
             <input type="radio" class="menu2-2" id="menu2-2" name="menu2" />
-            <label for="menu2-2" class="menu-button btn btn-light rounded-1">assessments</label>
+            <label for="menu2-2" class="menu-button btn btn-light rounded-1">main results</label>
             <div class="menu2-1 mt-2 d-none">
                 <div class="card rounded-1 mb-3">
                     <img class="card-img-top" src="./images/design-1.png" alt="Card image cap">
@@ -367,7 +367,19 @@
                     </div>
                 </div>
             </div>
-            <div class="menu2-2 assessment mt-2 d-none">
+            <div class="menu2-2 mainresults mt-2 d-none">
+                <div class="card-columns">
+                    <div class="card p-2">
+                        <div class="card-body">
+                            <h4 class="">Normal ileum section</h4>
+                        </div><img class="card-img-top" src="./images/mainresults/mainresults-1.png" alt="">
+                    </div>
+                    <div class="card p-2">
+                        <div class="card-body">
+                            <h4 class="">Ileum section with transmural section</h4>
+                        </div><img class="card-img-top" src="./images/mainresults/mainresults-2.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
         <!-- MENU2 END -->
@@ -376,7 +388,17 @@
         <!-- MENU3 START-->
         <div class="menu menu3 text-justify d-none">
             <div class="card publication p-3">
-
+                <h2>Publications : </h2>
+                <p>
+                    <b>C. Auzolle and al. – APT: </b><br>
+                    Male gender, active smoking and previous intestinal resection are risk factors of postoperative endoscopic recurrence in Crohn’s disease: results from a prospective cohort study<br>
+                    <a href="./pdf/Singh_editorial-CD-recurrence_NOV2018.pdf" target="_blank">
+                        &bull; Editorial: Predicting recurrence of Crohn’s disease after surgical resction close to a crystal ball&nbsp;<img class="icon" src="./images/pdf.svg" alt=""><br>
+                    </a>
+                    <a href="./pdf/Allez-and-al_editorial-CD-recurrence_NOV2018.pdf" target="_blank">
+                        &bull; Editorial: Predicting recurrence of Crohn’s disease after surgical resction close to a crystal ball – Author’s reply&nbsp;<img class="icon" src="./images/pdf.svg" alt=""><br>
+                    </a>
+                </p>
             </div>
         </div>
         <!-- MENU3 END -->
@@ -412,7 +434,8 @@
                             <input class="form-control" id="email" name="email" type="text" placeholder="Email *"
                                 required oninvalid="setCustomValidity('Please Fill out this Field')"
                                 oninput="setCustomValidity('')" />
-                            <span class="email-invalid text-danger mt-1 d-none">Your email address is invalid. Please
+                            <span class="email-invalid text-danger mt-1 d-none">Your email address is invalid.
+                                Please
                                 enter a valid address</span>
                         </div>
                         <div class="form-group">
@@ -445,15 +468,16 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    CHU NANCY - Hôpital de Brabois<br>
-                    &bull;L. PEYRIN-BIROULET<br>
-                    &bull;S. PETIT<br>
-                    &bull;G. FOUQUET<br>
-                    &bull;K. TOUABI<br>
-                    &bull;A-C. DIATA<br>
-                    &bull;E. DETRY<br>
-                    CHU STRASBOURG<br>
-                    &bull;J-M. REIMUND<br>
+                    <b>CHU NANCY - Hôpital de Brabois</b><br>
+                    &bull; L. PEYRIN-BIROULET<br>
+                    &bull; S. PETIT<br>
+                    &bull; G. FOUQUET<br>
+                    &bull; K. TOUABI<br>
+                    &bull; A-C. DIATA<br>
+                    &bull; E. DETRY<br>
+                    <br>
+                    <b>CHU STRASBOURG</b><br>
+                    &bull; J-M. REIMUND<br>
                 </div>
             </div>
         </div>
@@ -468,7 +492,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    CHU BORDEAUX - Hôpital Haut-Lévêque<br>
+                    <b>CHU BORDEAUX - Hôpital Haut-Lévêque</b><br>
                     &bull; D. LAHARIE<br>
                     &bull; W. MERROUCHE<br>
                 </div>
@@ -486,16 +510,16 @@
                 </div>
                 <div class="modal-body">
                     <p>
-                        CHU LYON Sud<br>
-                        &bull;S. NANCEY<br>
-                        &bull;H. HAFJISAVVAS
+                        <b>CHU LYON Sud</b><br>
+                        &bull; S. NANCEY<br>
+                        &bull; H. HAFJISAVVAS<br>
                     </p>
                     <p>
-                        CHU CLERMONT-FERRAND<br>
-                        &bull;A. BUISSON<br>
-                        &bull;D. COBAN<br>
-                        &bull;N. BARNICH (laboratory)<br>
-                        &bull;M. GOUTTE
+                        <b>CHU CLERMONT-FERRAND</b><br>
+                        &bull; A. BUISSON<br>
+                        &bull; D. COBAN<br>
+                        &bull; N. BARNICH<br>
+                        &bull; M. GOUTTE<br>
                     </p>
                 </div>
             </div>
@@ -511,30 +535,35 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    CHU ST LOUIS<br>
-                    &bull;M. ALLEZ<br>
-                    &bull;L. CHEDOUBA<br>
-                    &bull;J. BONNET<br>
-                    &bull;A. NIZARD (clinical research)<br>
+                    <p>
+                        <b>CHU ST LOUIS</b><br>
+                        &bull; M. ALLEZ<br>
+                        &bull; L. CHEDOUBA<br>
+                        &bull; J. BONNET<br>
+                        &bull; A. NIZARD<br>
+                    </p>
+                    <p>
+                        <b>CHU BEAUJON</b><br>
+                        &bull; X. TRETON<br>
+                        &bull; Y. BOUHNIK<br>
+                        &bull; C. STEFANESCU
+                    </p>
+                    <p>
+                        <b>CHU ST ANTOINE</b><br>
+                        &bull; P. SEKSIK<br>
+                        &bull; H. SOKOL<br>
+                        &bull; TEC URC-Est<br>
+                    </p>
+                    <p>
+                        <b>CHU BICETRE</b><br>
+                        &bull; F. CARBONNEL<br>
+                        &bull; T. VAYSSE<br>
+                        &bull; L. MARTHEY<br>
+                        &bull; N. OUSLIMANE-KASSA<br>
+                        &bull; E. SUDOL<br>
+                    </p>
 
-                    CHU BEAUJON<br>
-                    &bull;X. TRETON<br>
-                    &bull;Y. BOUHNIK<br>
-                    &bull;C. STEFANESCU
-
-                    CHU ST ANTOINE<br>
-                    &bull;P. SEKSIK<br>
-                    &bull;H. SOKOL<br>
-                    &bull;TEC URC-Est<br>
-
-                    CHU BICETRE<br>
-                    &bull;F. CARBONNEL<br>
-                    &bull;T. VAYSSE<br>
-                    &bull;L. MARTHEY<br>
-                    &bull;N. OUSLIMANE-KASSA<br>
-                    &bull;E. SUDOL<br>
-
-                    Hôpital Henri MONDOR<br>
+                    <b>Hôpital Henri MONDOR</b><br>
                     &bull;A. AMIOT<br>
                 </div>
             </div>
@@ -550,9 +579,11 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    CHU MONTPELLIER<br>
-                    &bull;G. PINETON de CHAMBRUN
-                    &bull;M. BOISSIERE MARCONNET
+                    <p>
+                        <b>CHU MONTPELLIER</b><br>
+                        &bull; G. PINETON de CHAMBRUN<br>
+                        &bull; M. BOISSIERE MARCONNET<br>
+                    </p>
                 </div>
             </div>
         </div>
@@ -567,19 +598,21 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    CHU AMIENS<br>
-                    <!-- Clinical research members<br> -->
-                    &bull; M. FUMERY<br>
-                    &bull; J. LOREAU<br>
-                    &bull; F. BRAZIER<br>
-                    &bull; M. LECONTE<br>
-                    <br>
-                    CHRU LILLE - Hôpital Claude Huriez<br>
-                    &bull; M. NACHURY<br>
-                    &bull; B. PARIENTE<br>
-                    &bull; C. SOMNEVILLE-BAILLY<br>
-                    &bull; A. BAILLON<br>
-                    &bull; V. KONDRATEK<br>
+                    <p>
+                        <b>CHU AMIENS</b><br>
+                        &bull; M. FUMERY<br>
+                        &bull; J. LOREAU<br>
+                        &bull; F. BRAZIER<br>
+                        &bull; M. LECONTE<br>
+                    </p>
+                    <p>
+                        <b>CHRU LILLE - Hôpital Claude Huriez</b><br>
+                        &bull; M. NACHURY<br>
+                        &bull; B. PARIENTE<br>
+                        &bull; C. SOMNEVILLE-BAILLY<br>
+                        &bull; A. BAILLON<br>
+                        &bull; V. KONDRATEK<br>
+                    </p>
                 </div>
             </div>
         </div>
@@ -594,11 +627,13 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    CHU NANTES<br>
-                    &bull; A. BOURREILLE<br>
-                    &bull; K. AMOURIAUX<br>
-                    &bull; E. KERDREUX<br>
-                    &bull; S. BARDOT"<br>
+                    <p>
+                        <b>CHU NANTES</b><br>
+                        &bull; A. BOURREILLE<br>
+                        &bull; K. AMOURIAUX<br>
+                        &bull; E. KERDREUX<br>
+                        &bull; S. BARDOT<br>
+                    </p>
                 </div>
             </div>
         </div>
@@ -613,14 +648,16 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    CHU NICE<br>
-                    &bull;X. HEBUTERNE<br>
-                    &bull;J. FILIPPI<br>
-                    &bull;N. ARAB<br>
-                    &bull;J. LECHARDEUR<br>
-                    &bull;A. DIA<br>
-                    &bull;J. CONDAT<br>
-                    &bull;V. CLUZEAU"<br>
+                    <p>
+                        <b>CHU NICE</b><br>
+                        &bull; X. HEBUTERNE<br>
+                        &bull; J. FILIPPI<br>
+                        &bull; N. ARAB<br>
+                        &bull; J. LECHARDEUR<br>
+                        &bull; A. DIA<br>
+                        &bull; J. CONDAT<br>
+                        &bull; V. CLUZEAU<br>
+                    </p>
                 </div>
             </div>
         </div>
@@ -635,11 +672,13 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    CHU SART TILMAN<br>
-                    &bull; E. LOUIS<br>
-                    &bull; C. REENAERS<br>
-                    &bull; M-A. MEUWIS<br>
-                    &bull; C. MASSOT<br>
+                    <p>
+                        <b>CHU SART TILMAN</b><br>
+                        &bull; E. LOUIS<br>
+                        &bull; C. REENAERS<br>
+                        &bull; M-A. MEUWIS<br>
+                        &bull; C. MASSOT<br>
+                    </p>
                 </div>
             </div>
         </div>

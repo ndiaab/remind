@@ -154,30 +154,29 @@
         return menutab;
     };
 
-    const displayAssessments = (assessments) => {
-        let assessmentsHTML = '<div class="card-columns">';
-        assessments.forEach(assessment => {
-            assessmentsHTML += '<div class="card p-2">';
-            assessmentsHTML += !!assessment.title ?
+    const displayMainResults = (mainresults) => {
+        let mainresultsHTML = '<div class="card-columns columns-main-results">';
+        mainresults.forEach(mainresult => {
+            mainresultsHTML += '<div class="card p-2">';
+            mainresultsHTML += !!mainresult.title ?
                 '<div class="card-body">' +
-                '<h4 class="">' + assessment.title + '</h4>' +
+                '<h4 class="">' + mainresult.title + '</h4>' +
                 '</div>' : '';
-            assessmentsHTML += !!assessment.image ? '<img class="card-img-top" src="./images/assessment/' + assessment.image + '" alt="">' : '';
-            assessmentsHTML += !!assessment.subtitle ? '<div class="card-body">' + assessment.subtitle + '</div>' : '';
-            assessmentsHTML += '</div>';
+            mainresultsHTML += !!mainresult.image ? '<img class="card-img-top" src="./images/mainresults/' + mainresult.image + '" alt="">' : '';
+            mainresultsHTML += !!mainresult.subtitle ? '<div class="card-body">' + mainresult.subtitle + '</div>' : '';
+            mainresultsHTML += '</div>';
         });
-        assessmentsHTML += '</div>';
-        document.querySelector('div.assessment').innerHTML = assessmentsHTML;
+        mainresultsHTML += '</div>';
+        document.querySelector('div.mainresults').innerHTML += mainresultsHTML;
     }
 
     const displayPublications = (publications) => {
-        let publicationsHTML = '<h2>Publications : </h2>';
-        publications.reverse();
+        let publicationsHTML = '';
         publications.forEach(publication => {
             publicationsHTML += '<p><b>' + publication.title + ': </b>' +
-                '<br/><a href="' + HREF + 'pdf/' + publication.pdf + '" target="_blank">' + publication.description + '&nbsp;<img class="icon" src="./images/pdf.svg" alt></a></p>'
+                '<br/><a href="./pdf/' + publication.pdf + '" target="_blank">' + publication.description + '&nbsp;<img class="icon" src="./images/pdf.svg" alt></a></p>'
         });
-        document.querySelector('div.publication').innerHTML = publicationsHTML;
+        document.querySelector('div.publication').innerHTML += publicationsHTML;
     }
 
     const displayOrganisation = (organisation) => {
@@ -226,19 +225,19 @@
         form = document.querySelector('form.gform');
         form.addEventListener('submit', handleFormSubmit, false);
 
-        loadJSON(HREF + '/json/organisation.json', (response) => {
+        loadJSON('./json/organisation.json', (response) => {
             // Parse JSON string into object
             displayOrganisation(JSON.parse(response));
         });
 
-        loadJSON(HREF + '/json/publications.json', (response) => {
+        loadJSON('./json/publications.json', (response) => {
             // Parse JSON string into object
             displayPublications(JSON.parse(response));
         });
 
-        loadJSON(HREF + '/json/assessment.json', (response) => {
+        loadJSON('./json/mainresults.json', (response) => {
             // Parse JSON string into object
-            displayAssessments(JSON.parse(response));
+            displayMainResults(JSON.parse(response));
         });
     };
 

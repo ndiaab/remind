@@ -95,6 +95,10 @@ input:checked[type="radio"] + label{
     text-transform: uppercase;
 }
 
+.columns-main-results {
+    column-count: 1!important;
+}
+
 .menu1:checked ~ .menu1 {
     display: block!important;
 }
