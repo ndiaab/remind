@@ -13,5 +13,15 @@
         "title": "M. Allez and al. - GUT",
         "description": "T cell clonal expansions in ileal Crohn’s disease are associated with smoking behaviour and postoperative recurrence",
         "pdf":"Allez-and-al_GUT_JAN2019.pdf"
+    },
+    {
+        "title": "N. Hammoudi et al. –  CGH",
+        "description": "Impact of microscopic lesions at the ileal resection margin on post-operative recurrence in Crohn’s Disease.",
+        "pdf":"Hammoudi-et-al_CGH_JUN2019.pdf"
+    },
+    {
+        "title": "H. Sokol et al. – GUT",
+        "description": "Prominence of ileal mucosa associated microbiota to predict post-operative endoscopic recurrence in Crohn's disease.",
+        "pdf":"Sokol-et-al_Microbiote-recurrence-CD_v1.pdf"
     }
 ]
